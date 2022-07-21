@@ -25,6 +25,9 @@ inputs:
   build_only:
     description: 'Will build the Jekyll site without publishing it'
     required: false
+  build_dir:
+    description: 'The directory to build your project in'
+    required: false
   keep_history:
     description: 'Do not overwrite whatever was already published on the target branch'
     required: false
@@ -34,6 +37,9 @@ inputs:
       ensuring build dependencies are up to date or installing 
       new dependencies. For example, use `apk --update add 
       imagemagick` to install ImageMagick.
+    required: false
+  bundler_version:
+    description: 'When set override the default bundler version provided.'
     required: false
 outputs:
   sha: 
